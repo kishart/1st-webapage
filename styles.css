@@ -1,0 +1,330 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*navbar*/
+
+nav {
+    background: rgb(150, 150, 250);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: #055fa3;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media(max-width:952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ∼ ul {
+        left: 0;
+    }
+}
+
+section {
+    background: white;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+
+/*homepage*/
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    float: left;
+    width: 50%;
+    padding: 50px;
+    height: 130vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+p {
+    font-family: Arial;
+    font-size: 10px;
+}
+
+
+/*about*/
+
+.aboutpic {
+    margin-top: 8%;
+    margin-left: 32%;
+    margin-bottom: 5%;
+    width: 40vw;
+    height: 50vh;
+}
+
+.about {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(216, 45, 253, 1) 79%);
+}
+
+.aboutp {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 20px;
+}
+
+
+/*film*/
+
+.filmpage {
+    background: rgb(53, 195, 34);
+    background: linear-gradient(0deg, rgba(45, 243, 247, 0.863) 0%, rgba(216, 45, 253, 1) 79%);
+}
+
+
+/*details 1*/
+
+.film1 {
+    float: left;
+    height: 60vh;
+    margin-top: 10%;
+    padding-left: 8%;
+    padding-right: 20px;
+}
+
+.filmp {
+    font-size: 25px;
+    padding-top: 17%;
+    padding-bottom: 30%;
+    padding-right: 20%;
+    color: white;
+}
+
+
+/*details 2*/
+
+.film2 {
+    float: left;
+    height: 60vh;
+    padding-left: 8%;
+    padding-right: 20px;
+    margin-top: -12%;
+}
+
+.filmo {
+    font-size: 25px;
+    padding-bottom: 15%;
+    padding-right: 20%;
+    color: white;
+}
+
+
+/*details 3*/
+
+.film3 {
+    float: left;
+    height: 60vh;
+    padding-left: 8%;
+    padding-right: 20px;
+}
+
+.filma {
+    font-size: 25px;
+    padding-bottom: 25%;
+    padding-right: 20%;
+    color: white;
+    padding-top: 10%;
+}
+
+
+/*details 4*/
+
+.film4 {
+    float: left;
+    height: 60vh;
+    padding-left: 8%;
+    padding-right: 20px;
+    margin-top: -8%;
+}
+
+.filme {
+    font-size: 25px;
+    padding-bottom: 25%;
+    padding-right: 20%;
+    color: white;
+    padding-top: 1%;
+}
+
+
+/*music page*/
+
+.musicpage {
+    background: rgb(139, 30, 97);
+}
+
+.flex-container1,
+.flex-container2 {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 8%;
+}
+
+.flex-container2 {
+    padding-bottom: 4%;
+}
+
+.music {
+    height: 75%;
+    margin-right: 15px;
+    margin-left: 75px;
+    margin-bottom: 20px;
+}
+
+
+/*music page*/
+
+.merchandisepage {
+    background: rgb(48, 96, 168);
+    background: linear-gradient(0deg, rgba(45, 243, 247, 0.863) 0%, rgba(216, 45, 253, 1) 79%);
+}
+
+
+/*details 1*/
+
+.m1 {
+    float: left;
+    height: 40vh;
+    margin-top: 10%;
+    padding-left: 8%;
+    padding-right: 20px;
+}
+
+.p1 {
+    font-size: 25px;
+    padding-top: 15%;
+    padding-bottom: 25%;
+    padding-right: 9%;
+    padding-left: 45%;
+    color: white;
+}
+
+
+/*details 2*/
+
+.m2 {
+    float: left;
+    height: 40vh;
+    padding-left: 8%;
+    padding-right: 20px;
+    margin-top: -12%;
+}
+
+.p2 {
+    font-size: 25px;
+    padding-right: 9%;
+    padding-left: 45%;
+    color: white;
+    margin-top: -7%;
+    padding-bottom: 12%;
+}
